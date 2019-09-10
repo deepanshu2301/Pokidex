@@ -35,7 +35,7 @@ public class Pokeclass extends AppCompatActivity {
             JSONObject obj = new JSONObject(readJSONFromAsset());
 //            Toast.makeText(getBaseContext(),""+obj.length(),Toast.LENGTH_SHORT).show();
 
-                Toast.makeText(getBaseContext(),""+obj.get(pokemon),Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getBaseContext(),""+obj.get(pokemon),Toast.LENGTH_SHORT).show();
 
 
         } catch (JSONException e) {

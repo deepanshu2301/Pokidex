@@ -19,6 +19,7 @@ package org.tensorflow.lite.examples.classification;
 import android.Manifest;
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.hardware.camera2.CameraAccessException;
@@ -45,6 +46,7 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.WindowManager;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
@@ -52,6 +54,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import java.nio.ByteBuffer;
 import java.util.List;
+
+import org.tensorflow.lite.examples.classification.customview.Pokeclass;
 import org.tensorflow.lite.examples.classification.env.ImageUtils;
 import org.tensorflow.lite.examples.classification.env.Logger;
 import org.tensorflow.lite.examples.classification.tflite.Classifier.Device;
@@ -102,6 +106,9 @@ public abstract class CameraActivity extends AppCompatActivity
   private Model model = Model.QUANTIZED;
   private Device device = Device.CPU;
   private int numThreads = -1;
+  int pro=0;
+  Button pokview;
+  String pokemon = "pikachu";
 
   @Override
   protected void onCreate(final Bundle savedInstanceState) {
@@ -129,6 +136,7 @@ public abstract class CameraActivity extends AppCompatActivity
     gestureLayout = findViewById(R.id.gesture_layout);
     sheetBehavior = BottomSheetBehavior.from(bottomSheetLayout);
     bottomSheetArrowImageView = findViewById(R.id.bottom_sheet_arrow);
+    pokview = findViewById(R.id.pokexpand);
 
     ViewTreeObserver vto = gestureLayout.getViewTreeObserver();
     vto.addOnGlobalLayoutListener(
@@ -199,6 +207,17 @@ public abstract class CameraActivity extends AppCompatActivity
     model = Model.valueOf(modelSpinner.getSelectedItem().toString().toUpperCase());
     device = Device.valueOf(deviceSpinner.getSelectedItem().toString());
     numThreads = Integer.parseInt(threadsTextView.getText().toString().trim());
+
+    pokview.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        Intent intent = new Intent(getBaseContext(), Pokeclass.class);
+        intent.putExtra("Pokemon",pokemon);
+        startActivity(intent);
+      }
+    });
+
+
   }
 
   protected int[] getRgbBytes() {
@@ -256,7 +275,11 @@ public abstract class CameraActivity extends AppCompatActivity
             isProcessingFrame = false;
           }
         };
-    processImage();
+
+    if(pro==0){
+        processImage();
+    }
+
   }
 
   /** Callback for Camera2 API */
@@ -521,27 +544,35 @@ public abstract class CameraActivity extends AppCompatActivity
     if (results != null && results.size() >= 3) {
       Recognition recognition = results.get(0);
       if (recognition != null) {
-        if (recognition.getTitle() != null) recognitionTextView.setText(recognition.getTitle());
+        if (recognition.getTitle() != null)
         if (recognition.getConfidence() != null)
+//          float val = 100*recognition.getConfidence();
+//        Toast.makeText(getBaseContext(),""+Math.round(100*recognition.getConfidence()),Toast.LENGTH_SHORT).show();
+        if(Math.round(100*recognition.getConfidence()) > 97){
+            recognitionTextView.setText(recognition.getTitle());
           recognitionValueTextView.setText(
-              String.format("%.2f", (100 * recognition.getConfidence())) + "%");
+                  String.format("%.2f", (100 * recognition.getConfidence())) + "%");
+          pokemon=recognition.getTitle();
+          pro=1;
+        }
+
       }
 
       Recognition recognition1 = results.get(1);
       if (recognition1 != null) {
-        if (recognition1.getTitle() != null) recognition1TextView.setText(recognition1.getTitle());
-        if (recognition1.getConfidence() != null)
-          recognition1ValueTextView.setText(
-              String.format("%.2f", (100 * recognition1.getConfidence())) + "%");
+//        if (recognition1.getTitle() != null) recognition1TextView.setText(recognition1.getTitle());
+//        if (recognition1.getConfidence() != null)
+//          recognition1ValueTextView.setText(
+//              String.format("%.2f", (100 * recognition1.getConfidence())) + "%");
       }
 
       Recognition recognition2 = results.get(2);
-      if (recognition2 != null) {
-        if (recognition2.getTitle() != null) recognition2TextView.setText(recognition2.getTitle());
-        if (recognition2.getConfidence() != null)
-          recognition2ValueTextView.setText(
-              String.format("%.2f", (100 * recognition2.getConfidence())) + "%");
-      }
+//      if (recognition2 != null) {
+//        if (recognition2.getTitle() != null) recognition2TextView.setText(recognition2.getTitle());
+//        if (recognition2.getConfidence() != null)
+//          recognition2ValueTextView.setText(
+//              String.format("%.2f", (100 * recognition2.getConfidence())) + "%");
+//      }
     }
   }
 

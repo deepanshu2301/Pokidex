@@ -42,10 +42,13 @@
             android:layout_alignParentTop="true"
             android:background="@color/semi_transparent">
 
-            <ImageView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/tfl_logo" />
+                android:text="DJ's Pokédex"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="#FFFFFF"/>
         </androidx.appcompat.widget.Toolbar>
 
     </RelativeLayout>

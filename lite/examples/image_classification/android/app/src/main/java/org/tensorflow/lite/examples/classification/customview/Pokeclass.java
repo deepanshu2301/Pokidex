@@ -54,15 +54,17 @@ public class Pokeclass extends AppCompatActivity {
             Pokemon pok = gson.fromJson(obj.get(pokemonn).toString(), Pokemon.class);
 //            Toast.makeText(getBaseContext(),""+pok.getAbilities(),Toast.LENGTH_SHORT).show();
 
+            String ab = pok.getAbilities();
+            String ab1=ab.replaceAll("\\[", "").replaceAll("\\]","").replaceAll("\\'", "").replaceAll("\\,", "\n");
             Name.setText(pokemonn);
             pokeno.setText(pok.getPokedex_number());
             type.setText(pok.getType1());
-            ability.setText(pok.getAbilities());
-            height.setText(pok.getHeight_m());
+            ability.setText(ab1);
+            height.setText(pok.getHeight_m() + " m");
             attack.setText(pok.getAttack());
-            weight.setText(pok.getWeight_kg());
+            weight.setText(pok.getWeight_kg() + " kg");
             generation.setText(pok.getGeneration());
-            speed.setText(pok.getSpeed());
+            speed.setText(pok.getSpeed() + " kmps");
             capture.setText(pok.getCapture_rate());
             defense.setText(pok.getDefense());
             happy.setText(pok.getBase_happiness());

@@ -394,5 +394,495 @@
             android:padding="3dp"
             android:layout_height="wrap_content" />
     </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginTop="30sp"
+            android:textColor="#000000"
+            android:text="Attack Stats : "/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="Bug :"
+                        android:textAlignment="textEnd"
+                        android:textStyle=""
+                        android:textColor="@color/grey"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:text="1.00"
+                        android:id="@+id/bugval"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="Dark :"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:text="1.00"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:id="@+id/darkval"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="Dragon :"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:text="1.00"
+                        android:id="@+id/dragon"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="Electric :"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:text="1.00"
+                        android:id="@+id/electric"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:textAlignment="textEnd"
+                        android:text="Fairy  "
+                        android:textColor="@color/grey"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:text="1.00"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:id="@+id/fairyval"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="Fight :"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:text="1.00"
+                        android:id="@+id/fightval"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="Fire :"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:text="1.00"
+                        android:id="@+id/fireval"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="Flying :"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:text="1.00"
+                        android:id="@+id/flyingval"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="Ghost :"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:text="1.00"
+                        android:id="@+id/ghostval"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="170dp"
+                android:src="@drawable/badges"
+                android:scaleType="fitCenter"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:src="@drawable/badgesone"
+                android:scaleType="fitCenter"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="Grass :"
+                        android:textAlignment="textEnd"
+                        android:textStyle=""
+                        android:textColor="@color/grey"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:text="1.00"
+                        android:id="@+id/grassval"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="Ground :"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:text="1.00"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:id="@+id/groundval"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="Ice :"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:text="1.00"
+                        android:id="@+id/iceval"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="Normal :"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:text="1.00"
+                        android:id="@+id/normal"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:textAlignment="textEnd"
+                        android:text="Poison :"
+                        android:textColor="@color/grey"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:text="1.00"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:id="@+id/poisonval"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="Psychic :"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:text="1.00"
+                        android:id="@+id/psychicval"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="Rock :"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:text="1.00"
+                        android:id="@+id/rockval"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="Steel :"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:text="1.00"
+                        android:id="@+id/steelval"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="Water :"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/grey"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:text="1.00"
+                        android:id="@+id/waterval"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
     </LinearLayout>
 </ScrollView>

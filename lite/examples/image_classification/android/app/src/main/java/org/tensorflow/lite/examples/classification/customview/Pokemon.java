@@ -1,7 +1,7 @@
 package org.tensorflow.lite.examples.classification.customview;
 
 public class Pokemon {
-    public Pokemon(String abilities, String attack, String base_happiness, String capture_rate, String classfication, String defense, String height_m, String pokedex_number, String speed, String type1, String weight_kg, String generation, String is_legendary, String base_egg_steps) {
+    public Pokemon(String abilities, String attack, String base_happiness, String capture_rate, String classfication, String defense, String height_m, String pokedex_number, String speed, String type1, String weight_kg, String generation, String is_legendary, String base_egg_steps, String against_bug, String against_dark, String against_dragon, String against_electric, String against_fairy, String against_fight, String against_fire, String against_flying, String against_ghost, String against_grass, String against_ground, String against_ice, String against_normal, String against_poison, String against_psychic, String against_rock, String against_steel, String against_water) {
         this.abilities = abilities;
         this.attack = attack;
         this.base_happiness = base_happiness;
@@ -16,6 +16,24 @@ public class Pokemon {
         this.generation = generation;
         this.is_legendary = is_legendary;
         this.base_egg_steps = base_egg_steps;
+        this.against_bug = against_bug;
+        this.against_dark = against_dark;
+        this.against_dragon = against_dragon;
+        this.against_electric = against_electric;
+        this.against_fairy = against_fairy;
+        this.against_fight = against_fight;
+        this.against_fire = against_fire;
+        this.against_flying = against_flying;
+        this.against_ghost = against_ghost;
+        this.against_grass = against_grass;
+        this.against_ground = against_ground;
+        this.against_ice = against_ice;
+        this.against_normal = against_normal;
+        this.against_poison = against_poison;
+        this.against_psychic = against_psychic;
+        this.against_rock = against_rock;
+        this.against_steel = against_steel;
+        this.against_water = against_water;
     }
 
     public String getAbilities() {
@@ -130,6 +148,150 @@ public class Pokemon {
         this.base_egg_steps = base_egg_steps;
     }
 
+    public String getAgainst_bug() {
+        return against_bug;
+    }
+
+    public void setAgainst_bug(String against_bug) {
+        this.against_bug = against_bug;
+    }
+
+    public String getAgainst_dark() {
+        return against_dark;
+    }
+
+    public void setAgainst_dark(String against_dark) {
+        this.against_dark = against_dark;
+    }
+
+    public String getAgainst_dragon() {
+        return against_dragon;
+    }
+
+    public void setAgainst_dragon(String against_dragon) {
+        this.against_dragon = against_dragon;
+    }
+
+    public String getAgainst_electric() {
+        return against_electric;
+    }
+
+    public void setAgainst_electric(String against_electric) {
+        this.against_electric = against_electric;
+    }
+
+    public String getAgainst_fairy() {
+        return against_fairy;
+    }
+
+    public void setAgainst_fairy(String against_fairy) {
+        this.against_fairy = against_fairy;
+    }
+
+    public String getAgainst_fight() {
+        return against_fight;
+    }
+
+    public void setAgainst_fight(String against_fight) {
+        this.against_fight = against_fight;
+    }
+
+    public String getAgainst_fire() {
+        return against_fire;
+    }
+
+    public void setAgainst_fire(String against_fire) {
+        this.against_fire = against_fire;
+    }
+
+    public String getAgainst_flying() {
+        return against_flying;
+    }
+
+    public void setAgainst_flying(String against_flying) {
+        this.against_flying = against_flying;
+    }
+
+    public String getAgainst_ghost() {
+        return against_ghost;
+    }
+
+    public void setAgainst_ghost(String against_ghost) {
+        this.against_ghost = against_ghost;
+    }
+
+    public String getAgainst_grass() {
+        return against_grass;
+    }
+
+    public void setAgainst_grass(String against_grass) {
+        this.against_grass = against_grass;
+    }
+
+    public String getAgainst_ground() {
+        return against_ground;
+    }
+
+    public void setAgainst_ground(String against_ground) {
+        this.against_ground = against_ground;
+    }
+
+    public String getAgainst_ice() {
+        return against_ice;
+    }
+
+    public void setAgainst_ice(String against_ice) {
+        this.against_ice = against_ice;
+    }
+
+    public String getAgainst_normal() {
+        return against_normal;
+    }
+
+    public void setAgainst_normal(String against_normal) {
+        this.against_normal = against_normal;
+    }
+
+    public String getAgainst_poison() {
+        return against_poison;
+    }
+
+    public void setAgainst_poison(String against_poison) {
+        this.against_poison = against_poison;
+    }
+
+    public String getAgainst_psychic() {
+        return against_psychic;
+    }
+
+    public void setAgainst_psychic(String against_psychic) {
+        this.against_psychic = against_psychic;
+    }
+
+    public String getAgainst_rock() {
+        return against_rock;
+    }
+
+    public void setAgainst_rock(String against_rock) {
+        this.against_rock = against_rock;
+    }
+
+    public String getAgainst_steel() {
+        return against_steel;
+    }
+
+    public void setAgainst_steel(String against_steel) {
+        this.against_steel = against_steel;
+    }
+
+    public String getAgainst_water() {
+        return against_water;
+    }
+
+    public void setAgainst_water(String against_water) {
+        this.against_water = against_water;
+    }
+
     public  String abilities;
     public  String attack;
     public String base_happiness;
@@ -144,4 +306,23 @@ public class Pokemon {
     public String generation;
     public String is_legendary;
     public String base_egg_steps;
+    public String against_bug;
+    public String against_dark;
+    public String against_dragon;
+    public String against_electric;
+    public String against_fairy;
+    public String against_fight;
+    public String against_fire;
+    public String against_flying;
+    public String against_ghost;
+    public String against_grass;
+    public String against_ground;
+    public String against_ice;
+    public String against_normal;
+    public String against_poison;
+    public String against_psychic;
+    public String against_rock;
+    public String against_steel;
+    public String against_water;
+
 }

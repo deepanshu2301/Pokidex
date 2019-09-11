@@ -22,6 +22,7 @@ public class Pokeclass extends AppCompatActivity {
 
 
     TextView Name, pokeno,type,ability,attack,height,weight,generation,speed,capture,defense,happy,transform,classif,legend;
+    TextView bug,dark,dragon,electric,fairy,fight,fire,flying,ghost,grass,ground,ice,normal,poison,psychic,rock,steel,water;
     String pokemonn;
     @Override
     protected void onCreate( Bundle savedInstanceState) {
@@ -43,6 +44,25 @@ public class Pokeclass extends AppCompatActivity {
         transform=findViewById(R.id.transform);
         classif=findViewById(R.id.classif);
         legend=findViewById(R.id.legend);
+
+        bug = findViewById(R.id.bugval);
+        dark=findViewById(R.id.darkval);
+        dragon=findViewById(R.id.dragon);
+        electric=findViewById(R.id.electric);
+        fairy=findViewById(R.id.fairyval);
+        fight=findViewById(R.id.fightval);
+        fire=findViewById(R.id.fireval);
+        flying=findViewById(R.id.flyingval);
+        ghost=findViewById(R.id.ghostval);
+        grass=findViewById(R.id.grassval);
+        ground=findViewById(R.id.groundval);
+        ice=findViewById(R.id.iceval);
+        normal=findViewById(R.id.normal);
+        poison=findViewById(R.id.poisonval);
+        psychic=findViewById(R.id.psychicval);
+        rock=findViewById(R.id.rockval);
+        steel=findViewById(R.id.steelval);
+        water=findViewById(R.id.waterval);
 
 
         pokemonn = getIntent().getStringExtra("Pokemon");
@@ -71,6 +91,23 @@ public class Pokeclass extends AppCompatActivity {
             transform.setText(pok.getBase_egg_steps());
             classif.setText(pok.getClassfication());
             legend.setText(pok.getIs_legendary());
+            bug.setText(pok.getAgainst_bug());
+            dark.setText(pok.getAgainst_dark());
+            dragon.setText(pok.getAgainst_dragon());
+            electric.setText(pok.getAgainst_electric());
+            fairy.setText(pok.getAgainst_fairy());
+            fight.setText(pok.getAgainst_fight());
+            fire.setText(pok.getAgainst_fire());
+            flying.setText(pok.getAgainst_flying());
+            ghost.setText(pok.getAgainst_ghost());
+            ground.setText(pok.getAgainst_ground());
+            ice.setText(pok.getAgainst_ice());
+            normal.setText(pok.getAgainst_normal());
+            poison.setText(pok.getAgainst_poison());
+            psychic.setText(pok.getAgainst_psychic());
+            rock.setText(pok.getAgainst_rock());
+            steel.setText(pok.getAgainst_steel());
+            water.setText(pok.getAgainst_water());
 
 
         } catch (JSONException e) {

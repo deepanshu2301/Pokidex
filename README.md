@@ -6,7 +6,7 @@ Android app that identifies and detects Pokémons in the provided Image using Te
 [https://www.kaggle.com/thedagger/pokemon-generation-one](https://www.kaggle.com/thedagger/pokemon-generation-one)
 
 # Screenshots 
-![](https://i.imgur.com/wxBKQm1.jpg) 
+![](https://i.imgur.com/UYpHTiB.jpg?1) 
 ![](https://i.imgur.com/MFCpZiH.jpg) 
 ![](https://i.imgur.com/t9XT6n0.jpg) 
 ![](https://i.imgur.com/QNeMdLM.jpg) 

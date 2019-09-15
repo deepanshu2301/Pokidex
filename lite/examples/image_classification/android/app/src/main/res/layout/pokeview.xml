@@ -484,17 +484,18 @@
     </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:textSize="25sp"
-            android:layout_marginTop="30sp"
-            android:textColor="#000000"
-            android:text="Attack Stats : "/>
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/transparent1"
+            android:text="Attack "/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="horizontal"
+            android:background="@drawable/shape2"
             android:layout_margin="3dp"
             android:layout_height="wrap_content">
 
@@ -502,496 +503,756 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:layout_marginLeft="40dp"
                 android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:textColor="@color/transparent1"
+                    android:text="Weak"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:orientation="horizontal"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_width="100dp"
-                        android:text="Bug :"
-                        android:textAlignment="textEnd"
-                        android:textStyle=""
-                        android:textColor="@color/grey"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:textStyle="bold"
-                        android:text="1.00"
+                        android:text="Bug"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
                         android:id="@+id/bugval"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="100dp"
-                        android:text="Dark :"
-                        android:textAlignment="textEnd"
-                        android:textColor="@color/grey"
-                        android:textSize="22sp"
-                        android:padding="3dp"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
                         android:layout_width="wrap_content"
-                        android:textAlignment="center"
-                        android:text="1.00"
-                        android:layout_marginLeft="3dp"
-                        android:textStyle="bold"
-                        android:id="@+id/darkval"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="100dp"
-                        android:text="Dragon :"
-                        android:textAlignment="textEnd"
+                        android:text="Dragon"
+                        android:textAllCaps="true"
                         android:textColor="@color/grey"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:textAlignment="center"
-                        android:layout_marginLeft="3dp"
-                        android:textStyle="bold"
-                        android:text="1.00"
+                        android:textSize="20sp"
                         android:id="@+id/dragon"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="100dp"
-                        android:text="Electric :"
-                        android:textAlignment="textEnd"
-                        android:textColor="@color/grey"
-                        android:textSize="22sp"
-                        android:padding="3dp"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
                         android:layout_width="wrap_content"
-                        android:textAlignment="center"
-                        android:text="1.00"
+                        android:text="dark"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/darkval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Electric"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
                         android:id="@+id/electric"
-                        android:layout_marginLeft="3dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:padding="3dp"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:orientation="horizontal"
+                    android:layout_marginTop="5sp"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_width="100dp"
-                        android:textAlignment="textEnd"
-                        android:text="Fairy  "
-                        android:textColor="@color/grey"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                    <TextView
                         android:layout_width="wrap_content"
-                        android:textAlignment="center"
-                        android:text="1.00"
-                        android:layout_marginLeft="3dp"
-                        android:textStyle="bold"
+                        android:text="fairy"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
                         android:id="@+id/fairyval"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="100dp"
-                        android:text="Fight :"
-                        android:textAlignment="textEnd"
-                        android:textColor="@color/grey"
-                        android:textSize="22sp"
-                        android:padding="3dp"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
                         android:layout_width="wrap_content"
-                        android:textAlignment="center"
-                        android:text="1.00"
+                        android:text="fight"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
                         android:id="@+id/fightval"
-                        android:layout_marginLeft="3dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="100dp"
-                        android:text="Fire :"
-                        android:textAlignment="textEnd"
-                        android:textColor="@color/grey"
-                        android:textSize="22sp"
-                        android:padding="3dp"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
                         android:layout_width="wrap_content"
-                        android:textAlignment="center"
-                        android:text="1.00"
-                        android:id="@+id/fireval"
-                        android:layout_marginLeft="3dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="100dp"
-                        android:text="Flying :"
-                        android:textAlignment="textEnd"
+                        android:text="flying"
+                        android:textAllCaps="true"
                         android:textColor="@color/grey"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:textAlignment="center"
-                        android:text="1.00"
+                        android:textSize="20sp"
                         android:id="@+id/flyingval"
-                        android:layout_marginLeft="3dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="100dp"
-                        android:text="Ghost :"
-                        android:textAlignment="textEnd"
-                        android:textColor="@color/grey"
-                        android:textSize="22sp"
-                        android:padding="3dp"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
                         android:layout_width="wrap_content"
-                        android:textAlignment="center"
-                        android:text="1.00"
+                        android:text="ghost"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
                         android:id="@+id/ghostval"
-                        android:layout_marginLeft="3dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="170dp"
-                android:orientation="vertical"
-                android:layout_height="match_parent">
-                <ImageView
-                    android:layout_width="150dp"
-                    android:src="@drawable/badges"
-                    android:scaleType="fitCenter"
-                    android:layout_height="300dp" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="15dp"
-                    android:textStyle="bold"
-                    android:text="(Kanto, Johto, Hoenn)"/>
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_margin="3dp"
-            android:layout_marginTop="30dp"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:layout_width="190dp"
-                android:orientation="vertical"
-                android:layout_height="match_parent">
-                <ImageView
-                    android:layout_width="150dp"
-                    android:src="@drawable/badgesone"
-                    android:scaleType="fitCenter"
-                    android:layout_marginLeft="50dp"
-                    android:layout_height="300dp" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="15dp"
-                    android:textAlignment="textEnd"
-                    android:textStyle="bold"
-                    android:text="(Sinnoh, Unova, Kalos)"/>
-            </LinearLayout>
-                <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:layout_marginLeft="40dp"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="100dp"
-                        android:text="Grass :"
-                        android:textAlignment="textEnd"
-                        android:textStyle=""
-                        android:textColor="@color/grey"
-                        android:textSize="22sp"
-                        android:padding="3dp"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:textStyle="bold"
-                        android:text="1.00"
+                        android:text="fire"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/fireval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5sp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="grass"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
                         android:id="@+id/grassval"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="100dp"
-                        android:text="Ground :"
-                        android:textAlignment="textEnd"
-                        android:textColor="@color/grey"
-                        android:textSize="22sp"
-                        android:padding="3dp"
+                        android:layout_marginLeft="2sp"
+                        android:layout_marginRight="2sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
                         android:layout_width="wrap_content"
-                        android:textAlignment="center"
-                        android:text="1.00"
-                        android:layout_marginLeft="3dp"
-                        android:textStyle="bold"
+                        android:text="ground"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
                         android:id="@+id/groundval"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="100dp"
-                        android:text="Ice :"
-                        android:textAlignment="textEnd"
-                        android:textColor="@color/grey"
-                        android:textSize="22sp"
-                        android:padding="3dp"
+                        android:layout_marginLeft="2sp"
+                        android:layout_marginRight="2sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
                         android:layout_width="wrap_content"
-                        android:textAlignment="center"
-                        android:layout_marginLeft="3dp"
-                        android:textStyle="bold"
-                        android:text="1.00"
+                        android:text="ice"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
                         android:id="@+id/iceval"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="100dp"
-                        android:text="Normal :"
-                        android:textAlignment="textEnd"
-                        android:textColor="@color/grey"
-                        android:textSize="22sp"
-                        android:padding="3dp"
+                        android:layout_marginLeft="2sp"
+                        android:layout_marginRight="2sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
                         android:layout_width="wrap_content"
-                        android:textAlignment="center"
-                        android:text="1.00"
-                        android:id="@+id/normal"
-                        android:layout_marginLeft="3dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="100dp"
-                        android:textAlignment="textEnd"
-                        android:text="Poison :"
+                        android:text="norm"
+                        android:textAllCaps="true"
                         android:textColor="@color/grey"
-                        android:textSize="22sp"
-                        android:padding="3dp"
+                        android:textSize="20sp"
+                        android:id="@+id/normalval"
+                        android:layout_marginLeft="2sp"
+                        android:layout_marginRight="2sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
                         android:layout_width="wrap_content"
-                        android:textAlignment="center"
-                        android:text="1.00"
-                        android:layout_marginLeft="3dp"
-                        android:textStyle="bold"
-                        android:id="@+id/poisonval"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="100dp"
-                        android:text="Psychic :"
-                        android:textAlignment="textEnd"
+                        android:text="water"
+                        android:textAllCaps="true"
                         android:textColor="@color/grey"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:textAlignment="center"
-                        android:text="1.00"
-                        android:id="@+id/psychicval"
-                        android:layout_marginLeft="3dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="100dp"
-                        android:text="Rock :"
-                        android:textAlignment="textEnd"
-                        android:textColor="@color/grey"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:textAlignment="center"
-                        android:text="1.00"
-                        android:id="@+id/rockval"
-                        android:layout_marginLeft="3dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="100dp"
-                        android:text="Steel :"
-                        android:textAlignment="textEnd"
-                        android:textColor="@color/grey"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:textAlignment="center"
-                        android:text="1.00"
-                        android:id="@+id/steelval"
-                        android:layout_marginLeft="3dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="100dp"
-                        android:text="Water :"
-                        android:textAlignment="textEnd"
-                        android:textColor="@color/grey"
-                        android:textSize="22sp"
-                        android:padding="3dp"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:textAlignment="center"
-                        android:text="1.00"
+                        android:textSize="20sp"
                         android:id="@+id/waterval"
-                        android:layout_marginLeft="3dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
-                        android:padding="3dp"
+                        android:layout_marginLeft="2sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5sp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="posion"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/poisonval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="psychic"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/psychicval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="rock"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/rockval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="steel"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/steelval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:textColor="@color/transparent1"
+                    android:text="Resistant"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Bug"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/rbugval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Dragon"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/rdragon"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="dark"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/rdarkval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Electric"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/relectric"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5sp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="fairy"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/rfairyval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="fight"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/rfightval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="flying"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/rflyingval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="ghost"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/rghostval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="fire"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/rfireval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5sp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="grass"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/rgrassval"
+                        android:layout_marginLeft="2sp"
+                        android:layout_marginRight="2sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="ground"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/rgroundval"
+                        android:layout_marginLeft="2sp"
+                        android:layout_marginRight="2sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="ice"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/riceval"
+                        android:layout_marginLeft="2sp"
+                        android:layout_marginRight="2sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="norm"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/rnormalval"
+                        android:layout_marginLeft="2sp"
+                        android:layout_marginRight="2sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="water"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/rwaterval"
+                        android:layout_marginLeft="2sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5sp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="posion"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/rpoisonval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="psychic"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/rpsychicval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="rock"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/rrockval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="steel"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/rsteelval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5sp"
+                    android:textColor="@color/transparent1"
+                    android:text="Strong"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Bug"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/sbugval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Dragon"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/sdragon"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="dark"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/sdarkval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Electric"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/selectric"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5sp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="fairy"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/sfairyval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="fight"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/sfightval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="flying"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/sflyingval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="ghost"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/sghostval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="fire"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/sfireval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5sp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="grass"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/sgrassval"
+                        android:layout_marginLeft="2sp"
+                        android:layout_marginRight="2sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="ground"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/sgroundval"
+                        android:layout_marginLeft="2sp"
+                        android:layout_marginRight="2sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="ice"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/siceval"
+                        android:layout_marginLeft="2sp"
+                        android:layout_marginRight="2sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="norm"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/snormalval"
+                        android:layout_marginLeft="2sp"
+                        android:layout_marginRight="2sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="water"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/swaterval"
+                        android:layout_marginLeft="2sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5sp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="posion"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/spoisonval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="psychic"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/spsychicval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="rock"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/srockval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="steel"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:id="@+id/ssteelval"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
+                        android:background="@drawable/shape2"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
             </LinearLayout>
 
 

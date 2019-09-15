@@ -28,7 +28,7 @@ public class Pokeclass extends AppCompatActivity {
 
 
     TextView Name, pokeno,type,ability,attack,height,weight,generation,speed,capture,defense,happy,transform,classif,legend,ability1a,ability2a;
-    TextView bug,dark,dragon,electric,fairy,fight,fire,flying,ghost,grass,ground,ice,normal,poison,psychic,rock,steel,water,total1;
+    TextView bug,dark,dragon,electric,fairy,fight,fire,flying,ghost,grass,ground,ice,normal,poison,psychic,rock,steel,water,total1,type2,type1,permale;
     LinearLayout vgenere,vspeed,vcapture,vdefense,vhappy,vtransform,vclass,vlegendary,vmale;
     String pokemonn;
     ScrollView sview;
@@ -36,7 +36,9 @@ public class Pokeclass extends AppCompatActivity {
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pokeview);
-
+        type1=findViewById(R.id.utype1);
+        permale=findViewById(R.id.male);
+        type2=findViewById(R.id.utype2);
         ability1a=findViewById(R.id.ability1);
         ability2a=findViewById(R.id.ability2);
         vgenere=findViewById(R.id.lvgenere);
@@ -181,12 +183,15 @@ public class Pokeclass extends AppCompatActivity {
             Name.setText(pokemonn);
             pokeno.setText("#0"+pok.getPokedex_number());
             type.setText(pok.getType1());
-            ability.setText(ab2[0]);
+            type1.setText(pok.getType1());
+            type2.setText(pok.getType2());
+            permale.setText(pok.getPercentage_male());
+            ability.setText(" "+ab2[0]);
             ability1a.setText(ab2[1]);
-            ability2a.setText(pok.getType1() + "Attacks");
-            height.setText(pok.getHeight_m() + "m");
+            ability2a.setText(" "+pok.getType1().toUpperCase() + " Attack");
+            height.setText(pok.getHeight_m() + " m");
             attack.setText(pok.getAttack());
-            weight.setText(pok.getWeight_kg() + "kg");
+            weight.setText(pok.getWeight_kg() + " kg");
             generation.setText(pok.getGeneration());
             speed.setText(pok.getSpeed());
             capture.setText(pok.getCapture_rate());
@@ -194,7 +199,15 @@ public class Pokeclass extends AppCompatActivity {
             happy.setText(pok.getBase_happiness());
             transform.setText(pok.getBase_egg_steps());
             classif.setText(pok.getClassfication());
-            legend.setText(pok.getIs_legendary());
+
+            String le="";
+            if(pok.getIs_legendary().equals("0")){
+                le="No";
+            }
+            else{
+                le="Yes";
+            }
+            legend.setText(le);
             bug.setText(pok.getAgainst_bug());
             dark.setText(pok.getAgainst_dark());
             dragon.setText(pok.getAgainst_dragon());

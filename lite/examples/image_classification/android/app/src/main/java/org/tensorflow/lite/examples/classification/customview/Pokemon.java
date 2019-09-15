@@ -1,7 +1,7 @@
 package org.tensorflow.lite.examples.classification.customview;
 
 public class Pokemon {
-    public Pokemon(String abilities, String attack, String base_happiness, String capture_rate, String classfication, String defense, String height_m, String pokedex_number, String speed, String type1, String weight_kg, String generation, String is_legendary, String base_egg_steps, String against_bug, String against_dark, String against_dragon, String against_electric, String against_fairy, String against_fight, String against_fire, String against_flying, String against_ghost, String against_grass, String against_ground, String against_ice, String against_normal, String against_poison, String against_psychic, String against_rock, String against_steel, String against_water) {
+    public Pokemon(String abilities, String attack, String base_happiness, String capture_rate, String classfication, String defense, String height_m, String pokedex_number, String speed, String type1, String type2, String percentage_male, String weight_kg, String generation, String is_legendary, String base_egg_steps, String against_bug, String against_dark, String against_dragon, String against_electric, String against_fairy, String against_fight, String against_fire, String against_flying, String against_ghost, String against_grass, String against_ground, String against_ice, String against_normal, String against_poison, String against_psychic, String against_rock, String against_steel, String against_water) {
         this.abilities = abilities;
         this.attack = attack;
         this.base_happiness = base_happiness;
@@ -12,6 +12,8 @@ public class Pokemon {
         this.pokedex_number = pokedex_number;
         this.speed = speed;
         this.type1 = type1;
+        this.type2 = type2;
+        this.percentage_male = percentage_male;
         this.weight_kg = weight_kg;
         this.generation = generation;
         this.is_legendary = is_legendary;
@@ -114,6 +116,22 @@ public class Pokemon {
 
     public void setType1(String type1) {
         this.type1 = type1;
+    }
+
+    public String getType2() {
+        return type2;
+    }
+
+    public void setType2(String type2) {
+        this.type2 = type2;
+    }
+
+    public String getPercentage_male() {
+        return percentage_male;
+    }
+
+    public void setPercentage_male(String percentage_male) {
+        this.percentage_male = percentage_male;
     }
 
     public String getWeight_kg() {
@@ -302,6 +320,8 @@ public class Pokemon {
     public String pokedex_number;
     public String speed;
     public String type1;
+    public String type2;
+    public String percentage_male;
     public String weight_kg;
     public String generation;
     public String is_legendary;

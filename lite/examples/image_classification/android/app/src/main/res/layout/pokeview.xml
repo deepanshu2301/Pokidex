@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:padding="2dp"
     android:background="#FA8072"
-
+    android:id="@+id/ssview"
     android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,17 +28,17 @@
             android:id="@+id/name"
             android:text="Pokemon"
             android:layout_gravity="start"
-            android:textColor="@color/transparent1"
+            android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="bold"
             android:padding="3dp"
             android:layout_height="wrap_content" />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:id="@+id/number"
                 android:text="#000"
                 android:textColor="@color/transparent1"
-                android:textSize="25sp"
+                android:textSize="22sp"
                 android:layout_gravity="end"
                 android:gravity="end"
                 android:padding="3dp"
@@ -175,7 +175,7 @@
                     android:background="@drawable/shape"
                     android:id="@+id/height"
                     android:textColor="@color/grey"
-                    android:textSize="25sp"
+                    android:textSize="22sp"
                     android:padding="3dp"
                     android:layout_height="wrap_content" />
                 <TextView
@@ -201,7 +201,7 @@
                     android:background="@drawable/shape"
                     android:id="@+id/weight"
                     android:textColor="@color/grey"
-                    android:textSize="25sp"
+                    android:textSize="22sp"
                     android:padding="3dp"
                     android:layout_height="wrap_content" />
                 <TextView
@@ -264,6 +264,7 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_margin="10sp"
+            android:id="@+id/lvgenere"
             android:background="@drawable/shape"
             android:layout_height="wrap_content">
             <TextView
@@ -291,6 +292,7 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_margin="10sp"
+            android:id="@+id/lvspeed"
             android:background="@drawable/shape"
             android:layout_height="wrap_content">
             <TextView
@@ -317,6 +319,7 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_margin="10sp"
+            android:id="@+id/lvcapture"
             android:background="@drawable/shape"
             android:layout_height="wrap_content">
             <TextView
@@ -344,6 +347,7 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_margin="10sp"
+            android:id="@+id/lvdefense"
             android:background="@drawable/shape"
             android:layout_height="wrap_content">
             <TextView
@@ -371,6 +375,7 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_margin="10sp"
+            android:id="@+id/lvhappy"
             android:background="@drawable/shape"
             android:layout_height="wrap_content">
             <TextView
@@ -398,6 +403,7 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_margin="10sp"
+            android:id="@+id/lvtrans"
             android:background="@drawable/shape"
             android:layout_height="wrap_content">
             <TextView
@@ -406,7 +412,6 @@
                 android:textAlignment="center"
                 android:textColor="@color/grey"
                 android:textSize="22sp"
-                android:background="@drawable/bgcolor"
                 android:padding="3dp"
                 android:layout_height="wrap_content" />
             <TextView
@@ -428,61 +433,110 @@
             android:textAlignment="center"
             android:textSize="18sp"
             android:padding="5sp"
+            android:id="@+id/total"
             android:textStyle="bold"
             android:textAllCaps="true"
             android:text="total 000"/>
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_marginTop="30dp"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:text="Class:"
-            android:textStyle="bold"
-            android:textColor="#000000"
-            android:textSize="25sp"
-            android:padding="3dp"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:textAlignment="center"
-            android:text="Pokemon"
-            android:id="@+id/classif"
-            android:textColor="@color/grey"
-            android:textSize="22sp"
-            android:padding="3dp"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:text="Legendary:"
-            android:textStyle="bold"
-            android:textColor="#000000"
-            android:textSize="25sp"
-            android:padding="3dp"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:textAlignment="center"
-            android:text="Pokemon"
-            android:id="@+id/legend"
-            android:textColor="@color/grey"
-            android:textSize="22sp"
-            android:padding="3dp"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="10sp"
+            android:padding="3sp"
+            android:textColor="@color/transparent1"
+            android:textAlignment="center"
+            android:text="Breed Stats"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/shape2"
+            android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="10sp"
+        android:id="@+id/lvclass"
+        android:background="@drawable/shape"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="150dp"
+            android:text="Class:"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="22sp"
+            android:padding="3dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="textEnd"
+            android:text="00"
+            android:paddingEnd="20dp"
+            android:id="@+id/classif"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:padding="3dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/shape"
+        android:layout_margin="10sp"
+        android:id="@+id/lvlegend"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="150sp"
+            android:text="Legendary"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="22sp"
+            android:padding="3dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="textEnd"
+            android:text="00"
+            android:paddingEnd="20dp"
+            android:id="@+id/legend"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:padding="3dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/shape"
+                android:id="@+id/lvmale"
+                android:layout_margin="10sp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="150sp"
+                    android:text=" % Male"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey"
+                    android:textSize="22sp"
+                    android:padding="3dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textAlignment="textEnd"
+                    android:text="00"
+                    android:paddingEnd="20dp"
+                    android:id="@+id/male"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:padding="3dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -1259,7 +1313,7 @@
         </LinearLayout>
     <ImageView
         android:layout_width="50dp"
-        android:background="@null"
+        android:background="@drawable/shape"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:scaleType="fitCenter"

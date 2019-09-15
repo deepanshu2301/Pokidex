@@ -14,211 +14,273 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/shape"
         android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="2"
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+            android:layout_width="wrap_content"
             android:id="@+id/name"
-            android:textAlignment="center"
             android:text="Pokemon"
-            android:layout_margin="10sp"
-            android:textColor="#000000"
-            android:textSize="42sp"
-            android:textStyle="bold"
-            android:padding="3dp"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_marginTop="10sp"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:text="Poké No :"
-            android:textColor="#000000"
+            android:layout_gravity="start"
+            android:textColor="@color/transparent1"
             android:textSize="25sp"
             android:textStyle="bold"
             android:padding="3dp"
             android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/number"
+                android:text="#000"
+                android:textColor="@color/transparent1"
+                android:textSize="25sp"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:padding="3dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
         <TextView
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:textAlignment="center"
-            android:text="Pokemon"
-            android:id="@+id/number"
-            android:textColor="@color/grey"
-            android:textSize="22sp"
-            android:padding="3dp"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:text="Type :"
-            android:textStyle="bold"
-            android:textColor="#000000"
-            android:textSize="25sp"
-            android:padding="3dp"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:textAlignment="center"
-            android:text="Pokemon"
             android:id="@+id/type"
-            android:textColor="@color/grey"
-            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:padding="3dp"
+            android:text="Classification"
+            android:textColor="@color/transparent1"
+            android:textSize="25sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="150sp"
+                android:id="@+id/utype1"
+                android:text="Type1"
+                android:textAlignment="center"
+                android:background="@drawable/shape"
+                android:textAllCaps="true"
+                android:layout_gravity="start"
+                android:layout_margin="10sp"
+                android:textColor="@color/transparent1"
+                android:textSize="20sp"
+                android:padding="3dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="150sp"
+                android:id="@+id/utype2"
+                android:text="Type2"
+                android:textAlignment="center"
+                android:background="@drawable/shape"
+                android:textAllCaps="true"
+                android:layout_margin="10sp"
+                android:textColor="@color/transparent1"
+                android:textSize="20sp"
+                android:layout_gravity="end"
+                android:padding="3dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Abilities"
+            android:textAlignment="center"
+            android:layout_margin="10sp"
+            android:textColor="@color/transparent1"
+            android:textStyle="bold"
+            android:textSize="20sp"
             android:padding="3dp"
             android:layout_height="wrap_content" />
-    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="30sp"
+        android:padding="10dp"
+        android:background="@drawable/shape2"
         android:layout_height="wrap_content">
         <TextView
             android:layout_width="match_parent"
-            android:text="Abilities :"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:textSize="25sp"
-            android:padding="3dp"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:layout_width="match_parent"
-            android:text="Pokemon"
-            android:layout_marginLeft="5sp"
+            android:text="Ability1"
+            android:background="@drawable/shape"
+            android:layout_margin="5sp"
             android:id="@+id/ability"
             android:textColor="@color/grey"
             android:textSize="22sp"
             android:padding="3dp"
             android:layout_height="wrap_content" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_marginTop="10sp"
-        android:layout_height="wrap_content">
         <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:text="Strength :"
-            android:textStyle="bold"
-            android:textColor="#000000"
-            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:text="Ability2"
+            android:background="@drawable/shape"
+            android:layout_margin="5sp"
+            android:id="@+id/ability1"
+            android:textColor="@color/grey"
+            android:textSize="22sp"
             android:padding="3dp"
             android:layout_height="wrap_content" />
         <TextView
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:textAlignment="center"
-            android:text="Pokemon"
-            android:id="@+id/attack"
+            android:layout_width="match_parent"
+            android:text="Ability3"
+            android:background="@drawable/shape"
+            android:layout_margin="5sp"
+            android:id="@+id/ability2"
             android:textColor="@color/grey"
             android:textSize="22sp"
             android:padding="3dp"
             android:layout_height="wrap_content" />
     </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Species"
+            android:textAlignment="center"
+            android:layout_margin="10sp"
+            android:textColor="@color/transparent1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="3dp"
+            android:layout_height="wrap_content" />
     <LinearLayout
     android:layout_width="match_parent"
-
-    android:layout_marginTop="30sp"
+        android:orientation="vertical"
+    android:background="@drawable/shape2"
     android:layout_height="wrap_content">
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textColor="@color/transparent1"
         android:text="Physical Features :"
-        android:textSize="25sp"/>
-</LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:text="Height :"
-            android:textColor="#000000"
-            android:textSize="22sp"
-            android:layout_marginLeft="3dp"
-            android:padding="3dp"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:textAlignment="center"
-            android:text="Pokemon"
-            android:id="@+id/height"
-            android:textColor="@color/grey"
-            android:textSize="20sp"
-            android:padding="3dp"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:text="Weight :"
-            android:layout_marginLeft="3dp"
-            android:textColor="#000000"
-            android:textSize="22sp"
-            android:padding="3dp"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:textAlignment="center"
-            android:text="Pokemon"
-            android:id="@+id/weight"
-            android:textColor="@color/grey"
-            android:textSize="20sp"
-            android:padding="3dp"
-            android:layout_height="wrap_content" />
+        android:textSize="20sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="10sp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:text="10"
+                    android:background="@drawable/shape"
+                    android:id="@+id/height"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp"
+                    android:padding="3dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Height"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="3dp"
+                    android:padding="3dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="10sp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:text="10"
+                    android:background="@drawable/shape"
+                    android:id="@+id/weight"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp"
+                    android:padding="3dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                android:text="Weight"
+                android:layout_marginLeft="3dp"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:padding="3dp"
+                android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10sp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:text="Pokemon"
+                android:id="@+id/attack"
+                android:textColor="@color/grey"
+                android:textSize="22sp"
+                android:background="@drawable/shape"
+                android:padding="3dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Strength"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:padding="3dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
     </LinearLayout>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="25sp"
-        android:layout_marginTop="30sp"
-        android:textColor="#000000"
-        android:text="Base Stats : "/>
+        android:textSize="20sp"
+        android:layout_margin="10sp"
+        android:padding="3sp"
+        android:textColor="@color/transparent1"
+        android:textAlignment="center"
+        android:text="Base Stats"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
+        android:background="@drawable/shape2"
         android:layout_marginLeft="3dp"
         android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="horizontal"
+            android:layout_margin="10sp"
+            android:background="@drawable/shape"
             android:layout_height="wrap_content">
             <TextView
                 android:layout_width="150dp"
-                android:text="Genere :"
-                android:textAlignment="textEnd"
-                android:textStyle=""
+                android:text="Genere"
+                android:textAlignment="center"
                 android:textColor="@color/grey"
-                android:textSize="22sp"
+                android:textSize="20sp"
                 android:padding="3dp"
                 android:layout_height="wrap_content" />
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_marginLeft="3dp"
+                android:layout_width="match_parent"
                 android:textStyle="bold"
-                android:text="Pokemon"
+                android:text="00"
+                android:paddingEnd="20sp"
+                android:layout_gravity="end"
+                android:textAlignment="textEnd"
                 android:id="@+id/generation"
                 android:textColor="@color/black"
                 android:textSize="22sp"
@@ -228,20 +290,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="horizontal"
+            android:layout_margin="10sp"
+            android:background="@drawable/shape"
             android:layout_height="wrap_content">
             <TextView
                 android:layout_width="150dp"
-                android:text="Speed :"
-                android:textAlignment="textEnd"
+                android:text="Speed"
+                android:textAlignment="center"
                 android:textColor="@color/grey"
                 android:textSize="22sp"
                 android:padding="3dp"
                 android:layout_height="wrap_content" />
             <TextView
-                android:layout_width="wrap_content"
-                android:textAlignment="center"
-                android:text="Pokemon"
-                android:layout_marginLeft="3dp"
+                android:layout_width="match_parent"
+                android:textAlignment="textEnd"
+                android:text="00"
+                android:paddingEnd="20dp"
                 android:textStyle="bold"
                 android:id="@+id/speed"
                 android:textColor="@color/black"
@@ -252,21 +316,24 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="horizontal"
+            android:layout_margin="10sp"
+            android:background="@drawable/shape"
             android:layout_height="wrap_content">
             <TextView
                 android:layout_width="150dp"
-                android:text="Capture :"
-                android:textAlignment="textEnd"
+                android:text="Capture"
+                android:textAlignment="center"
                 android:textColor="@color/grey"
                 android:textSize="22sp"
                 android:padding="3dp"
                 android:layout_height="wrap_content" />
             <TextView
-                android:layout_width="wrap_content"
-                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:textAlignment="textEnd"
+                android:text="00"
+                android:paddingEnd="20dp"
                 android:layout_marginLeft="3dp"
                 android:textStyle="bold"
-                android:text="Pokemon"
                 android:id="@+id/capture"
                 android:textColor="@color/black"
                 android:textSize="22sp"
@@ -276,19 +343,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="horizontal"
+            android:layout_margin="10sp"
+            android:background="@drawable/shape"
             android:layout_height="wrap_content">
             <TextView
                 android:layout_width="150dp"
-                android:text="Defense :"
-                android:textAlignment="textEnd"
+                android:text="Defense"
+                android:textAlignment="center"
                 android:textColor="@color/grey"
                 android:textSize="22sp"
                 android:padding="3dp"
                 android:layout_height="wrap_content" />
             <TextView
-                android:layout_width="wrap_content"
-                android:textAlignment="center"
-                android:text="Pokemon"
+                android:layout_width="match_parent"
+                android:textAlignment="textEnd"
+                android:text="00"
+                android:paddingEnd="20dp"
                 android:id="@+id/defense"
                 android:layout_marginLeft="3dp"
                 android:textStyle="bold"
@@ -300,21 +370,24 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="horizontal"
+            android:layout_margin="10sp"
+            android:background="@drawable/shape"
             android:layout_height="wrap_content">
             <TextView
                 android:layout_width="150dp"
-                android:textAlignment="textEnd"
-                android:text="Happiness :"
+                android:textAlignment="center"
+                android:text="Happiness"
                 android:textColor="@color/grey"
                 android:textSize="22sp"
                 android:padding="3dp"
                 android:layout_height="wrap_content" />
             <TextView
-                android:layout_width="wrap_content"
-                android:textAlignment="center"
-                android:text="Pokemon"
-                android:layout_marginLeft="3dp"
+                android:layout_width="match_parent"
+                android:textAlignment="textEnd"
+                android:text="00"
+                android:paddingEnd="20dp"
                 android:textStyle="bold"
+                android:layout_marginLeft="3dp"
                 android:id="@+id/happy"
                 android:textColor="@color/black"
                 android:textSize="22sp"
@@ -324,19 +397,23 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="horizontal"
+            android:layout_margin="10sp"
+            android:background="@drawable/shape"
             android:layout_height="wrap_content">
             <TextView
                 android:layout_width="150dp"
-                android:text="Transform :"
-                android:textAlignment="textEnd"
+                android:text="Transform"
+                android:textAlignment="center"
                 android:textColor="@color/grey"
                 android:textSize="22sp"
+                android:background="@drawable/bgcolor"
                 android:padding="3dp"
                 android:layout_height="wrap_content" />
             <TextView
-                android:layout_width="wrap_content"
-                android:textAlignment="center"
-                android:text="Pokemon"
+                android:layout_width="match_parent"
+                android:textAlignment="textEnd"
+                android:text="00"
+                android:paddingEnd="20dp"
                 android:id="@+id/transform"
                 android:layout_marginLeft="3dp"
                 android:textStyle="bold"
@@ -345,6 +422,16 @@
                 android:padding="3dp"
                 android:layout_height="wrap_content" />
         </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:padding="5sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="total 000"/>
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"

@@ -27,7 +27,7 @@ import java.lang.reflect.Type;
 public class Pokeclass extends AppCompatActivity {
 
 
-    TextView Name, pokeno,type,ability,attack,height,weight,generation,speed,capture,defense,happy,transform,classif,legend;
+    TextView Name, pokeno,type,ability,attack,height,weight,generation,speed,capture,defense,happy,transform,classif,legend,ability1a,ability2a;
     TextView bug,dark,dragon,electric,fairy,fight,fire,flying,ghost,grass,ground,ice,normal,poison,psychic,rock,steel,water,total1;
     LinearLayout vgenere,vspeed,vcapture,vdefense,vhappy,vtransform,vclass,vlegendary,vmale;
     String pokemonn;
@@ -37,7 +37,8 @@ public class Pokeclass extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pokeview);
 
-
+        ability1a=findViewById(R.id.ability1);
+        ability2a=findViewById(R.id.ability2);
         vgenere=findViewById(R.id.lvgenere);
         vspeed=findViewById(R.id.lvspeed);
         vcapture=findViewById(R.id.lvcapture);
@@ -95,8 +96,8 @@ public class Pokeclass extends AppCompatActivity {
 //            Toast.makeText(getBaseContext(),""+pok.getAbilities(),Toast.LENGTH_SHORT).show();
 
             String ab = pok.getAbilities();
-            String ab1=ab.replaceAll("\\[", "").replaceAll("\\]","").replaceAll("\\'", "").replaceAll("\\,", "\n");
-
+            String ab1=ab.replaceAll("\\[", "").replaceAll("\\]","").replaceAll("\\'", "");
+            String[] ab2 = ab1.split(",");
 
             String col=pok.getType1();
             if(col.contains("bug")){
@@ -178,9 +179,11 @@ public class Pokeclass extends AppCompatActivity {
 
 
             Name.setText(pokemonn);
-            pokeno.setText(pok.getPokedex_number());
+            pokeno.setText("#0"+pok.getPokedex_number());
             type.setText(pok.getType1());
-            ability.setText(ab1);
+            ability.setText(ab2[0]);
+            ability1a.setText(ab2[1]);
+            ability2a.setText(pok.getType1() + "Attacks");
             height.setText(pok.getHeight_m() + "m");
             attack.setText(pok.getAttack());
             weight.setText(pok.getWeight_kg() + "kg");

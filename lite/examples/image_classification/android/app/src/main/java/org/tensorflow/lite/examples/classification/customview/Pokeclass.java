@@ -5,30 +5,29 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
-import android.util.Log;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.gson.Gson;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.tensorflow.lite.examples.classification.R;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Type;
 
 public class Pokeclass extends AppCompatActivity {
 
 
     TextView Name, pokeno,type,ability,attack,height,weight,generation,speed,capture,defense,happy,transform,classif,legend,ability1a,ability2a;
-    TextView bug,dark,dragon,electric,fairy,fight,fire,flying,ghost,grass,ground,ice,normal,poison,psychic,rock,steel,water,total1,type2,type1,permale;
+    TextView bug,dark,dragon,electric,fairy,fight,fire,flying,ghost,grass,ground,ice,poison,psychic,rock,steel,water,total1,type2,type1,permale;
+    TextView rbug,rdark,rdragon,relectric,rfairy,rfight,rfire,rflying,rghost,rgrass,rground,rice,rpoison,rpsychic,rrock,rsteel,rwater;
+    TextView sbug,sdark,sdragon,selectric,sfairy,sfight,sfire,sflying,sghost,sgrass,sground,sice,spoison,spsychic,srock,ssteel,swater;
     LinearLayout vgenere,vspeed,vcapture,vdefense,vhappy,vtransform,vclass,vlegendary,vmale;
     String pokemonn;
     ScrollView sview;
@@ -80,12 +79,47 @@ public class Pokeclass extends AppCompatActivity {
         grass=findViewById(R.id.grassval);
         ground=findViewById(R.id.groundval);
         ice=findViewById(R.id.iceval);
-//        normal=findViewById(R.id.normal);
         poison=findViewById(R.id.poisonval);
         psychic=findViewById(R.id.psychicval);
         rock=findViewById(R.id.rockval);
         steel=findViewById(R.id.steelval);
         water=findViewById(R.id.waterval);
+
+        rbug = findViewById(R.id.rbugval);
+        rdark=findViewById(R.id.rdarkval);
+        rdragon=findViewById(R.id.rdragon);
+        relectric=findViewById(R.id.relectric);
+        rfairy=findViewById(R.id.rfairyval);
+        rfight=findViewById(R.id.rfightval);
+        rfire=findViewById(R.id.rfireval);
+        rflying=findViewById(R.id.rflyingval);
+        rghost=findViewById(R.id.rghostval);
+        rgrass=findViewById(R.id.rgrassval);
+        rground=findViewById(R.id.rgroundval);
+        rice=findViewById(R.id.riceval);
+        rpoison=findViewById(R.id.rpoisonval);
+        rpsychic=findViewById(R.id.rpsychicval);
+        rrock=findViewById(R.id.rrockval);
+        rsteel=findViewById(R.id.rsteelval);
+        rwater=findViewById(R.id.rwaterval);
+
+        sbug = findViewById(R.id.sbugval);
+        sdark=findViewById(R.id.sdarkval);
+        sdragon=findViewById(R.id.sdragon);
+        selectric=findViewById(R.id.selectric);
+        sfairy=findViewById(R.id.sfairyval);
+        sfight=findViewById(R.id.sfightval);
+        sfire=findViewById(R.id.sfireval);
+        sflying=findViewById(R.id.sflyingval);
+        sghost=findViewById(R.id.sghostval);
+        sgrass=findViewById(R.id.sgrassval);
+        sground=findViewById(R.id.sgroundval);
+        sice=findViewById(R.id.siceval);
+        spoison=findViewById(R.id.spoisonval);
+        spsychic=findViewById(R.id.spsychicval);
+        srock=findViewById(R.id.srockval);
+        ssteel=findViewById(R.id.ssteelval);
+        swater=findViewById(R.id.swaterval);
 
 
         pokemonn = getIntent().getStringExtra("Pokemon");
@@ -208,23 +242,58 @@ public class Pokeclass extends AppCompatActivity {
                 le="Yes";
             }
             legend.setText(le);
-            bug.setText(pok.getAgainst_bug());
-            dark.setText(pok.getAgainst_dark());
-            dragon.setText(pok.getAgainst_dragon());
-            electric.setText(pok.getAgainst_electric());
-            fairy.setText(pok.getAgainst_fairy());
-            fight.setText(pok.getAgainst_fight());
-            fire.setText(pok.getAgainst_fire());
-            flying.setText(pok.getAgainst_flying());
-            ghost.setText(pok.getAgainst_ghost());
-            ground.setText(pok.getAgainst_ground());
-            ice.setText(pok.getAgainst_ice());
-//            normal.setText(pok.getAgainst_normal());
-            poison.setText(pok.getAgainst_poison());
-            psychic.setText(pok.getAgainst_psychic());
-            rock.setText(pok.getAgainst_rock());
-            steel.setText(pok.getAgainst_steel());
-            water.setText(pok.getAgainst_water());
+
+            float vaal = Float.parseFloat(pok.getAgainst_bug());
+            VisibilitySetter(vaal,bug,rbug,sbug);
+
+            float vaal1 = Float.parseFloat(pok.getAgainst_dark());
+            VisibilitySetter(vaal1,dark,rdark,sdark);
+
+            float vaal2 = Float.parseFloat(pok.getAgainst_dragon());
+            VisibilitySetter(vaal2,dragon,rdragon,sdragon);
+
+            float vaal3 = Float.parseFloat(pok.getAgainst_electric());
+            VisibilitySetter(vaal3,electric,relectric,selectric);
+
+            float vaal4 = Float.parseFloat(pok.getAgainst_fairy());
+            VisibilitySetter(vaal4,fairy,rfairy,sfairy);
+
+            float vaal5 = Float.parseFloat(pok.getAgainst_fight());
+            VisibilitySetter(vaal5,fight,rfight,sfight);
+
+            float vaal6 = Float.parseFloat(pok.getAgainst_flying());
+            VisibilitySetter(vaal6,flying,rflying,sflying);
+
+            float vaal7 = Float.parseFloat(pok.getAgainst_ghost());
+            VisibilitySetter(vaal7,ghost,rghost,sghost);
+
+            float vaal8 = Float.parseFloat(pok.getAgainst_fire());
+            VisibilitySetter(vaal8,fire,rfire,sfire);
+
+            float vaal9 = Float.parseFloat(pok.getAgainst_grass());
+            VisibilitySetter(vaal9,grass,rgrass,sgrass);
+
+            float vaal10 = Float.parseFloat(pok.getAgainst_ground());
+            VisibilitySetter(vaal10,ground,rground,sground);
+
+            float vaal11 = Float.parseFloat(pok.getAgainst_ice());
+            VisibilitySetter(vaal11,ice,rice,sice);
+
+            float vaal12 = Float.parseFloat(pok.getAgainst_water());
+            VisibilitySetter(vaal12,water,rwater,swater);
+
+            float vaal13 = Float.parseFloat(pok.getAgainst_poison());
+            VisibilitySetter(vaal13,poison,rpoison,spoison);
+
+            float vaal14 = Float.parseFloat(pok.getAgainst_psychic());
+            VisibilitySetter(vaal14,psychic,rpsychic,spsychic);
+
+            float vaal15 = Float.parseFloat(pok.getAgainst_rock());
+            VisibilitySetter(vaal15,rock,rrock,srock);
+
+            float vaal16 = Float.parseFloat(pok.getAgainst_steel());
+            VisibilitySetter(vaal16,steel,rsteel,ssteel);
+
             int total = Integer.parseInt(pok.getSpeed()) + Integer.parseInt(pok.getDefense()) + Integer.parseInt(pok.getCapture_rate()) + Integer.parseInt(pok.base_happiness);
             total1.setText("TOTAL  "+total);
 
@@ -249,5 +318,19 @@ public class Pokeclass extends AppCompatActivity {
             return null;
         }
         return json;
+    }
+
+    public void VisibilitySetter(float vaal , View v1 , View v2 , View v3){
+        if(vaal <= 0.5){
+            v2.setVisibility(View.GONE);
+            v3.setVisibility(View.GONE);
+        }else if (vaal <=1){
+            v1.setVisibility(View.GONE);
+            v3.setVisibility(View.GONE);
+        }
+        else{
+            v1.setVisibility(View.GONE);
+            v2.setVisibility(View.GONE);
+        }
     }
 }

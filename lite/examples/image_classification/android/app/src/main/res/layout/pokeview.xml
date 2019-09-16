@@ -575,8 +575,12 @@
                     android:orientation="horizontal"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_width="wrap_content"
+
+
                         android:text="Bug"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
                         android:textSize="20sp"
@@ -587,7 +591,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="Dragon"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -599,7 +605,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="dark"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -611,7 +619,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="Electric"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -629,7 +639,9 @@
                     android:layout_marginTop="5sp"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="fairy"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -641,7 +653,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="fight"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -653,7 +667,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="flying"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -665,7 +681,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="ghost"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -677,7 +695,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="fire"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -695,55 +715,52 @@
                     android:layout_marginTop="5sp"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="grass"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
                         android:textSize="20sp"
                         android:id="@+id/grassval"
-                        android:layout_marginLeft="2sp"
-                        android:layout_marginRight="2sp"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
                         android:background="@drawable/shape2"
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="ground"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
                         android:textSize="20sp"
                         android:id="@+id/groundval"
-                        android:layout_marginLeft="2sp"
-                        android:layout_marginRight="2sp"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
                         android:background="@drawable/shape2"
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="ice"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
                         android:textSize="20sp"
                         android:id="@+id/iceval"
-                        android:layout_marginLeft="2sp"
-                        android:layout_marginRight="2sp"
+                        android:layout_marginLeft="3sp"
+                        android:layout_marginRight="3sp"
                         android:background="@drawable/shape2"
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
+
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:text="norm"
-                        android:textAllCaps="true"
-                        android:textColor="@color/grey"
-                        android:textSize="20sp"
-                        android:id="@+id/normalval"
-                        android:layout_marginLeft="2sp"
-                        android:layout_marginRight="2sp"
-                        android:background="@drawable/shape2"
-                        android:padding="8dp"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="water"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -760,7 +777,9 @@
                     android:layout_marginTop="5sp"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="posion"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -772,7 +791,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="psychic"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -784,7 +805,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="rock"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -796,7 +819,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="steel"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -825,7 +850,9 @@
                     android:orientation="horizontal"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="Bug"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -837,7 +864,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="Dragon"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -849,7 +878,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="dark"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -861,7 +892,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="Electric"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -879,7 +912,9 @@
                     android:layout_marginTop="5sp"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="fairy"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -891,7 +926,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="fight"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -903,7 +940,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="flying"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -915,7 +954,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="ghost"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -927,7 +968,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="fire"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -945,7 +988,9 @@
                     android:layout_marginTop="5sp"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="grass"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -957,7 +1002,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="ground"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -969,7 +1016,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="ice"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -980,20 +1029,11 @@
                         android:background="@drawable/shape2"
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
+
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:text="norm"
-                        android:textAllCaps="true"
-                        android:textColor="@color/grey"
-                        android:textSize="20sp"
-                        android:id="@+id/rnormalval"
-                        android:layout_marginLeft="2sp"
-                        android:layout_marginRight="2sp"
-                        android:background="@drawable/shape2"
-                        android:padding="8dp"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="water"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1010,7 +1050,9 @@
                     android:layout_marginTop="5sp"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="posion"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1022,7 +1064,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="psychic"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1034,7 +1078,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="rock"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1046,7 +1092,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="steel"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1074,7 +1122,9 @@
                     android:orientation="horizontal"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="Bug"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1086,7 +1136,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="Dragon"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1098,7 +1150,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="dark"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1110,7 +1164,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="Electric"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1128,7 +1184,9 @@
                     android:layout_marginTop="5sp"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="fairy"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1140,7 +1198,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="fight"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1152,7 +1212,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="flying"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1164,7 +1226,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="ghost"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1176,7 +1240,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="fire"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1194,7 +1260,9 @@
                     android:layout_marginTop="5sp"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="grass"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1206,7 +1274,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="ground"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1218,7 +1288,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="ice"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1229,20 +1301,11 @@
                         android:background="@drawable/shape2"
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
+
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:text="norm"
-                        android:textAllCaps="true"
-                        android:textColor="@color/grey"
-                        android:textSize="20sp"
-                        android:id="@+id/snormalval"
-                        android:layout_marginLeft="2sp"
-                        android:layout_marginRight="2sp"
-                        android:background="@drawable/shape2"
-                        android:padding="8dp"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="water"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1259,7 +1322,9 @@
                     android:layout_marginTop="5sp"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="posion"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1271,7 +1336,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="psychic"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1283,7 +1350,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="rock"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"
@@ -1295,7 +1364,9 @@
                         android:padding="8dp"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:text="steel"
                         android:textAllCaps="true"
                         android:textColor="@color/grey"

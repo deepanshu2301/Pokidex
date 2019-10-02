@@ -19,7 +19,7 @@ Android app that detects and provides all the information about Pokémons in the
 ![](https://i.imgur.com/L6bMqQc.jpg?1)
 
 
-#License
+# License
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.

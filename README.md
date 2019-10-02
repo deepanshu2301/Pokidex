@@ -1,19 +1,19 @@
 # Pokedex
-Android app that identifies and detects and provides all the information about Pokémons in the provided Image using Tensorflow Lite. 
+Android app that detects and provides all the information about Pokémons in the provided Image using Tensorflow Lite. 
 
 # Dataset used to train the model
 
 [https://www.kaggle.com/thedagger/pokemon-generation-one](https://www.kaggle.com/thedagger/pokemon-generation-one)
 
 # Screenshots 
-![](https://imgur.com/YQFK5Zx) 
-![](https://imgur.com/5XrqjeQ) 
-![](https://imgur.com/Phm0Qc5) 
-![](https://imgur.com/lPXtb4x) 
-![](https://imgur.com/zcphE4f) 
-![](https://imgur.com/l5vfErX)
-![](https://imgur.com/wFO5wnF) 
-![](https://imgur.com/L6bMqQc)
+![](https://i.imgur.com/YQFK5Zx.png) 
+![](https://i.imgur.com/5XrqjeQ.jpg?2) 
+![](https://i.imgur.com/Phm0Qc5.jpg?1) 
+![](https://i.imgur.com/lPXtb4x.jpg?1) 
+![](https://i.imgur.com/zcphE4f.jpg?1) 
+![](https://i.imgur.com/l5vfErX.jpg?1)
+![](https://i.imgur.com/wFO5wnF.jpg?1) 
+![](https://i.imgur.com/L6bMqQc.jpg?1)
 
 #License
  Licensed under the Apache License, Version 2.0 (the "License");

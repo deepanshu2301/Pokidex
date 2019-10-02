@@ -298,16 +298,6 @@ public class Pokeclass extends AppCompatActivity {
             int total = Integer.parseInt(pok.getSpeed()) + Integer.parseInt(pok.getDefense()) + Integer.parseInt(pok.getCapture_rate()) + Integer.parseInt(pok.base_happiness);
             total1.setText("TOTAL  "+total);
 
-            int wid = valreto(5,180, Integer.parseInt(pok.getSpeed()),230);
-
-            LinearLayout ll = findViewById(R.id.lvspeed);
-
-            LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) ll.getLayoutParams();
-            int c = wid+155;
-            params.width = c;
-            Toast.makeText(getBaseContext(),""+c,Toast.LENGTH_LONG).show();
-            ll.setLayoutParams(params);
-//            speed.setText(pok.getSpeed());
         } catch (JSONException e) {
             e.printStackTrace();
         }

@@ -7,11 +7,14 @@ Android app that detects and provides all the information about Pokémons in the
 
 # Screenshots 
 ![](https://i.imgur.com/YQFK5Zx.png) 
+
 ![](https://i.imgur.com/5XrqjeQ.jpg?2) 
 ![](https://i.imgur.com/Phm0Qc5.jpg?1) 
 ![](https://i.imgur.com/lPXtb4x.jpg?1) 
+
 ![](https://i.imgur.com/zcphE4f.jpg?1) 
 ![](https://i.imgur.com/l5vfErX.jpg?1)
+
 ![](https://i.imgur.com/wFO5wnF.jpg?1) 
 ![](https://i.imgur.com/L6bMqQc.jpg?1)
 
